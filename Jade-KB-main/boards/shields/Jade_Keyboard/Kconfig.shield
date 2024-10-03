@@ -1,6 +1,0 @@
-config JADE_KEYBOARD_LEFT
-    def_bool $(shields_list_contains,Jade_Keyboard_left)
-    
-config JADE_KEYBOARD_RIGHT
-    def_bool $(shields_list_contains,Jade_Keyboard_right)
-
