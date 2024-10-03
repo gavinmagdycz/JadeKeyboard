@@ -26,4 +26,32 @@
             >;
         };
     };
+combos {
+        compatible = "zmk,combos";
+        combo_reset_left {
+            timeout-ms = <50>;
+            key-positions = <4 5 6>;
+            bindings = <&bootloader>;
+        };
+        combo_reset_right {
+            timeout-ms = <50>;
+            key-positions = <7 8 9>;
+            bindings = <&bootloader>;
+        };
+        combo_bluetooth_switch {
+            timeout-ms = <50>;
+            key-positions = <0 1 12 13>;
+            bindings = <&bt BT_NXT>;
+        };
+        combo_bluetooth_clear {
+            timeout-ms = <50>;
+            key-positions = <4 5 6>;
+            bindings = <&bt BT_CLR>;
+        };
+        combo_toggle_bluetooth {
+            timeout-ms = <50>;
+            key-positions = <6 8>;
+            bindings = <&out OUT_TOG>;
+        };
+    };
 };
