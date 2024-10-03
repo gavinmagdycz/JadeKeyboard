@@ -1,14 +1,24 @@
 #include "Jade_Keyboard.dtsi"
 
 &kscan0{
+
+    row-gpios
+        = <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
+
     col-gpios
-       = <&gpio0 17 GPIO_ACTIVE_HIGH>
-       , <&gpio0 20 GPIO_ACTIVE_HIGH>
-       , <&gpio0 24 GPIO_ACTIVE_HIGH>
-       , <&gpio1 00 GPIO_ACTIVE_HIGH>
-       , <&gpio0 11 GPIO_ACTIVE_HIGH>
+       = <&gpio1 6 GPIO_ACTIVE_HIGH>
        , <&gpio1 4 GPIO_ACTIVE_HIGH>
-       , <&gpio1 6 GPIO_ACTIVE_HIGH>
+       , <&gpio0 11 GPIO_ACTIVE_HIGH>
+       , <&gpio1 00 GPIO_ACTIVE_HIGH>
+       , <&gpio0 24 GPIO_ACTIVE_HIGH>
+       , <&gpio0 20 GPIO_ACTIVE_HIGH>
+       , <&gpio0 17 GPIO_ACTIVE_HIGH>
        ;
 };
 
