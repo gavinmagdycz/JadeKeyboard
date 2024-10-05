@@ -45,7 +45,7 @@ combos {
         };
         combo_bluetooth_clear {
             timeout-ms = <50>;
-            key-positions = <4 5 6>;
+            key-positions = <4 5 8 9>;
             bindings = <&bt BT_CLR>;
         };
         combo_toggle_bluetooth {
