@@ -22,3 +22,5 @@ include:
     shield: Jade_Keyboard_left
   - board: nice_nano_v2
     shield: Jade_Keyboard_right 
+  - board: nice_nano_v2
+    shield: settings_reset
