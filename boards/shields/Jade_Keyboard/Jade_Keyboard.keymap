@@ -28,12 +28,12 @@
     };
 combos {
         compatible = "zmk,combos";
-        combo_reset_left {
+        combo_reset_left_boot {
             timeout-ms = <50>;
             key-positions = <4 5 6>;
             bindings = <&bootloader>;
         };
-        combo_reset_right {
+        combo_reset_right_boot {
             timeout-ms = <50>;
             key-positions = <7 8 9>;
             bindings = <&bootloader>;
@@ -47,6 +47,16 @@ combos {
             timeout-ms = <50>;
             key-positions = <4 5 8 9>;
             bindings = <&bt BT_CLR>;
+        };
+        combo_reset_left {
+            timeout-ms = <50>;
+            key-positions = <3 4 6>;
+            bindings = <&sys_reset>;
+        };
+        combo_reset_left {
+            timeout-ms = <50>;
+            key-positions = <7 8 10>;
+            bindings = <&sys_reset;
         };
     };
 };
