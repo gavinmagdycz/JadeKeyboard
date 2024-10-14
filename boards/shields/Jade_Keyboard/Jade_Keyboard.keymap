@@ -53,7 +53,7 @@ combos {
             key-positions = <3 4 6>;
             bindings = <&sys_reset>;
         };
-        combo_reset_left {
+        combo_reset_right {
             timeout-ms = <50>;
             key-positions = <7 8 10>;
             bindings = <&sys_reset;
